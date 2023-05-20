@@ -232,23 +232,45 @@ link {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 112px 54px;
+
+}
+@media only screen and (min-width: 1158px) {
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+  }
 }
 
 .hero-title {
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
+    /* width: 320px; */
     color:var(--color-white);
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     max-width: 496px;
     text-align: center;
     letter-spacing: 0.02em;
 }
+@media only screen and (max-width: 428px) {
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        width: 496px;
+        margin-bottom: 48px;
+  }
+}
+
+
 
 .hero-button-active {
     display: block;
@@ -366,8 +388,7 @@ link {
 }
 
 .section-title {
-    /* width: 396px;
-    height: 40px; */
+  
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -388,12 +409,10 @@ link {
     letter-spacing: 0.02em;
     margin-top: 0;
     margin-bottom: 8px;
-    width: 396px; 
-    height: 40px;
+   
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .section-subtitle  {
-    width: 264px;
     
   }
 }
@@ -402,10 +421,9 @@ link {
         width: 264px;
     
   }
-}
+} */
 .sub-text {
-    width: 396px;
-    height: auto;
+   
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -489,7 +507,7 @@ link {
 
 .item-team {
     margin: 0 auto;
-
+    width: 264px;
 }
 
 @media only screen and (min-width: 11580px) {
@@ -628,13 +646,17 @@ fill: currentColor;
 }
 
 .footer-container {
-display: flex;
-align-items: baseline;
+/* display: flex;
+align-items: baseline; */
 margin-right: auto;
 margin-left: auto;
+row-gap: 72px;
 }
 .container-logo {
-   margin-right: 120px;
+   /* margin-right: 120px; */
+   margin-bottom: 72px;
+   margin-right: auto;
+margin-left: auto;
 }
    
 .link-logo-footer {
@@ -659,7 +681,7 @@ margin-left: auto;
     font-size: 16px;
     line-height: 1.5;
     max-width: 264px;
-    margin-right: auto;
+    /* margin-right: auto; */
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -714,7 +736,7 @@ margin-left: auto;
 }
 
 .container-subscribe {
-  margin-left: 80px;
+  /* margin-left: 80px; */
 
 }
 .subscribe-footer {
