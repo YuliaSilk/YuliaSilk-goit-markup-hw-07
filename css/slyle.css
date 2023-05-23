@@ -38,7 +38,7 @@ link {
 .img {
     display: block;
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
   
    .container {
@@ -78,9 +78,9 @@ link {
     top: 0;
     border-bottom: 1px solid  #e7e9fc;
     background-color:var(--color-white);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
 @media only screen and (min-width: 767px) {
@@ -102,7 +102,7 @@ link {
 }
 @media only screen and (min-width: 768px) {
     .main-nav  {
-    width: 100%;
+    width: 768px;
     height: 72px;
 
   }
@@ -110,7 +110,7 @@ link {
 @media only screen and (min-width: 1158px) {
     .main-nav {
     /* width: 100%; */
-    max-width: 1158px;
+    width: 1158px;
 
   }
 }
@@ -396,7 +396,8 @@ color: var(--color-navy-blue);
     .address {
         flex-direction: row;
         align-items: center;
-        align-items: flex-start;
+        align-self:flex-start;
+        align-items: flex-end;
         margin-left: auto;
         margin-top: 0;
         margin-bottom: 0;
@@ -431,13 +432,16 @@ color: var(--color-navy-blue);
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding: 112px 54px;
     background: var(--color-navy-blue);
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7) ),  url(../images/hero/people-office-1.jpg);
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 112px 54px;
+
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7) ),  url(../images/hero/Dark-bg_428.jpg);
+   
 
 }
 @media only screen and (min-width: 768px) {
