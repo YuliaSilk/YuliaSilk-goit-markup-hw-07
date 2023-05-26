@@ -363,10 +363,7 @@ color: var(--color-navy-blue);
         line-height: 1.5;
   }
 }
-/* .address {
-   
-   
-} */
+
 @media only screen and (min-width: 768px) {
     .address-list {
     display:flex;
