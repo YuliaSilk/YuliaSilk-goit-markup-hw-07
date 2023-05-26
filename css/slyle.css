@@ -908,11 +908,12 @@ fill: currentColor;
 .footer {
    background-color: var(--color-navy-blue);
    padding: 96px 0;
+   max-width: 100%;
 }
 
 @media only screen and (min-width: 1158px) {
     .footer {
-        padding: 100px 0;
+    padding: 100px 0;
   }
 }
 .footer-container {
@@ -925,12 +926,10 @@ row-gap: 72px;
 @media only screen and (min-width: 768px) {
     .footer-container {
         display: flex;
-        /* justify-content: flex-start; */
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 24px;
-        margin-left: 108px;
-        /* margin: 0 auto; */
+        margin-left: 92px;
         
   }
 }
@@ -947,7 +946,6 @@ row-gap: 72px;
 
 .container-logo {
   
-   /* margin-bottom: 72px; */
    margin-right: auto;
    margin-left: auto;
 
