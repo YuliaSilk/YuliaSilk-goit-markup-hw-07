@@ -88,6 +88,12 @@ link {
     height: 72px;
   }
 }
+/* @media only screen and (min-width: 1158px) {
+ .header-style {
+    
+
+  }
+} */
 
 
 .main-nav {
@@ -100,7 +106,12 @@ link {
 
   }
 }
-
+@media only screen and (min-width: 1158px) {
+  .main-nav-container {
+    max-width: 1440px;
+    width: 1158px;
+  }
+}
 .burger-mobile {
     display: flex;
     text-align: center;
@@ -410,7 +421,7 @@ color: var(--color-navy-blue);
 }
 
 .hero {
-    /* max-width: 1440px; */
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 112px;
@@ -922,16 +933,24 @@ row-gap: 72px;
 }
 @media only screen and (min-width: 768px) {
     .footer-container {
+        width: 768px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: baseline;
         column-gap: 24px;
-        margin-left: 92px;
-        
+        padding: 0 96px;
+       
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+    .footer-container {
+    width: 552px;
   }
 }
 @media only screen and (min-width: 1158px) {
     .footer-container {
+        width: 1158px;
         flex-wrap: nowrap;
         align-items: baseline;
         column-gap: 0;
@@ -961,9 +980,9 @@ row-gap: 72px;
 }
    
 .link-logo-footer {
-
     display: flex;
     justify-content: center;
+    /* display: block; */
     color: var(--color-iris);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -972,7 +991,10 @@ row-gap: 72px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 0;
+    /* margin: 0 auto; */
     margin-bottom: 16px;
+    
+
 
 }
 @media only screen and (min-width: 768px) {
@@ -982,7 +1004,7 @@ row-gap: 72px;
 }
 @media only screen and (min-width: 1158px) {
     .link-logo-footer {
-    justify-content: start;
+        display: block; 
   }
 }
 .footer-logo {
@@ -999,7 +1021,7 @@ row-gap: 72px;
 }
 @media only screen and (min-width: 1158px) {
     .footer-text {
-        margin-right: auto;
+     margin-right: auto;
   }
 }
 .socials-footer-container{
