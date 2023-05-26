@@ -923,10 +923,11 @@ row-gap: 72px;
 @media only screen and (min-width: 768px) {
     .footer-container {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 24px;
+        /* margin: 0; */
         
         /* row-gap: 72px; */
   }
